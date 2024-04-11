@@ -200,6 +200,8 @@ ul {
 footer {
   background-color: var(--navy-blue);
   padding: 100px 0;
+  display: flex;
+
 }
 
 footer p {
@@ -211,6 +213,7 @@ footer p {
   letter-spacing: 0.32px;
   margin-top: 32px;
   margin-bottom: 0;
+  
 }
 
 
@@ -221,16 +224,32 @@ footer p {
   text-align: center;
   width: 500px;
   margin-top: 0;
+  z-index: 1;
 }
 
 .studio-banner-container {
-  background-color: var(--navy-blue);
+  background-image: url('images/people-office\ 1.png');
+  
   height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   vertical-align: middle;
+}
+
+.overlay {
+  background-color: var(--navy-blue);
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.banner-wrapper {
+  position: relative;
 }
 
 .studio-banner-button {
@@ -240,6 +259,7 @@ footer p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.64px;
+  z-index: 1;
 }
 
 .container {
@@ -284,7 +304,8 @@ footer p {
 }
 
 .doing-section h2,
-.team-section h2 {
+.team-section h2,
+.customers h2 {
   font-size: 36px;
   color: var(--navy-blue);
   line-height: 1.11;
@@ -350,5 +371,113 @@ margin-top: 64px;
   letter-spacing: 0.32px;
 }
 
+.icon-list {
+  display: flex;
+  gap: 10px;
+  padding-top: 30px;
+  justify-content: center;
+}
+
+.icon-list 
+.icon svg {
+width: 20px;
+height: 20px;
+}
+
+.icon-list 
+.icon {
+  width: 44px;
+  height: 44px;
+  background-color: var(--iris);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.customers-list
+.customers-icon svg {
+  width: 168px;
+  height: 56px;
+}
+
+.customers-list
+.customers-icon {
+  background-color: var(--white);
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  column-gap: 24px;
+  margin-right: 12px;
+  margin-left: 12px;
+
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 120px;
+  padding-left: 156px;
+  padding-right: 156px;
+}
+
+.customers-icon {
+width: 168px;
+height: 88px;
+}
+
+.customers h2 {
+  padding-bottom: 72px;
+  padding-top: 120px;
+}
+
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut {
+  background-color: var(--cloud);
+  width: 100%;
+  height: 112px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.first4-icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--cloud);
+}
+
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  margin-right: 120px;
+}
+
+.social-media {
+  margin: 0;
+  color: var(--white);
+
+}
+
+.social-media-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+}
+
+.footer-container {
+  display: flex;
+}
 
 
